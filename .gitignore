@@ -1,0 +1,13 @@
+# Segredos — NUNCA versionar
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+.venv/
+venv/
+
+# Dados locais
+data/
+*.db
