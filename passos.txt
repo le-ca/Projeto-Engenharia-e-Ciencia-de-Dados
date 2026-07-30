@@ -1,0 +1,25 @@
+FASE 0
+
+1. Sistema de monitorização de preços de placas gráficas dedicadas, comparando uma loja de referência com 3 concorrentes portugueses, sobre um conjunto piloto de ~15 modelos populares.
+
+2. https://www.pcdiga.com/componentes/placas-graficas
+https://www.pccomponentes.pt/categorias/placas-graficas
+https://www.globaldata.pt/componentes/placas-graficas
+https://www.worten.pt/informatica-e-acessorios/componentes/placas-graficas
+
+3. Piloto: 12 modelos. Onze presentes nas 4 lojas (RTX 5060, 5060 Ti 8GB, 5060 Ti 16GB, 5070, 5070 Ti, 5080, 5090; RX 9060 XT 8GB, 9060 XT 16GB, 9070, 9070 XT) + Intel Arc B580 (cobertura parcial em 2 lojas, mantida pela diversidade de marca). RX 9070 GRE e geração anterior excluídos por cobertura insuficiente. Matching ao nível chipset (variante mais barata por loja), com EAN exato como técnica secundária.
+
+4. https://www.pcdiga.com/termos-e-condicoes-da-conta-online; pcdiga.com/robots.txt
+https://www.pccomponentes.pt/landings/aviso-legal-pt; pccomponentes.pt/robots.txt
+http://globaldata.pt/condicoes-de-venda.html; globaldata.pt/robots.txt
+https://chip7.pt/cms/termos-e-condicoes; chip7.pt/robots.txt
+
+5. https://github.com/le-ca/Projeto-Engenharia-e-Ciencia-de-Dados/
+
+6. https://github.com/le-ca/Projeto-Engenharia-e-Ciencia-de-Dados/blob/main/docs/requisitos.md
+
+FASE 1
+
+7. 
+
+
