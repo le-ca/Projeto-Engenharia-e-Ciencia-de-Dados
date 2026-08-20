@@ -22,4 +22,11 @@ FASE 1
 
 7. Ambiente Python com Poetry 2.4.1 (Python 3.12.3). pyproject.toml na raiz, formato [project] do Poetry 2.x. package-mode = false — sem pasta src/ por agora (nenhum código ainda); evita que o poetry install exija um pacote a construir. Dependências adicionadas por fase, não todas de início. Poetry instalado via pipx.
 
+8. Base de dados: TimescaleDB (imagem timescale/timescaledb:latest-pg16), não Postgres puro, pela natureza de série temporal dos preços. Corre só em Docker, sem instalação nativa — dispensa o passo 8 nativo do plano. Extensão timescaledb confirmada ativa via pg_extension.
+
+9. Docker Compose só com o serviço `db` nesta fase. Serviços `app` e `redis` adiados: `app` sem código para conteinerizar ainda, `redis` só serve o Celery (Fase 2; o MVP usa cron). Volume nomeado `pgdata` para persistência entre reinícios. Credenciais via `.env` (fora do Git); `.env.example` versionado. "Concluído quando" da fase ajustado para: BD em Docker a arrancar + ruff limpo.
+
+10. Credenciais e configuração em `.env` (POSTGRES_DB, USER, PASSWORD, HOST, PORT), ignorado pelo Git — confirmado com `git check-ignore .env`. Modelo `.env.example` sem segredos reais, esse sim versionado. O docker-compose.yml lê estas variáveis via ${...}, mantendo os segredos fora do ficheiro que vai para o repositório.
+
+11. Linting e formatação com ruff 0.16.3 (sem black — ruff format substitui-o, um tool em vez de dois). Config no pyproject.toml: line-length 100, target py312, regras E/F/I/UP/B (erros base, ordenação de imports, modernização de sintaxe, bugbear). `ruff check` e `ruff format --check` a passar limpos. Nota: `requires-python` teve de passar de "^3.12" (sintaxe Poetry) para ">=3.12" (padrão PEP 621), senão o ruff não consegue ler o pyproject.toml.
 
