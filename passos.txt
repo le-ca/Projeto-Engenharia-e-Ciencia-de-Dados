@@ -20,6 +20,6 @@ https://chip7.pt/cms/termos-e-condicoes; chip7.pt/robots.txt
 
 FASE 1
 
-7. 
+7. Ambiente Python com Poetry 2.4.1 (Python 3.12.3). pyproject.toml na raiz, formato [project] do Poetry 2.x. package-mode = false — sem pasta src/ por agora (nenhum código ainda); evita que o poetry install exija um pacote a construir. Dependências adicionadas por fase, não todas de início. Poetry instalado via pipx.
 
 
